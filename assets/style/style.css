@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'Pobeda';
+    src: url('../fonts/pobeda-regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pobeda';
+    src: url('../fonts/pobeda-bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Pobeda', 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+.nav-link:hover {
+    background-color: #ff0000;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.banner {
+    background-image: url('../media/banner-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner .content h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+    letter-spacing: 3px;
+}
+
+.banner .content h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 768px) {
+    .banner .content h1 {
+        font-size: 3rem;
+    }
+    .banner .content h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner .content h1 {
+        font-size: 2rem;
+    }
+    .banner .content h2 {
+        font-size: 1.3rem;
+    }
+}
+
+.select {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 2px 8px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.carousel-inner {
+    max-height: 95vh;
+}
+
+.carousel-item {
+    filter: brightness(1.2);
+}
+
+.carousel-caption {
+    padding-bottom: 15%;
+}
+
+.carousel-date {
+    font-weight: 900;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-text {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 5%;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    color: #000000;
+}
+
+.carousel-note {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.carousel-title {
+    display: inline-block;
+    color: #ffffff;
+    background-color: rgba(255, 0, 0, 0.9);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 1145px) {
+    .carousel-text {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-text {
+        font-size: 0.9rem;
+    }
+    .carousel-title {
+        font-size: 0.9rem;
+    }
+    .carousel-date {
+        font-size: 1.5rem;
+    }
+}
+
+.hero-photo {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 300px;
+}
+
+.hero-name {
+    display: inline-block;
+    color: #ffffff;
+    background-color: rgba(255, 0, 0, 0.9);
+    font-weight: 900;
+    border-radius: 10px;
+}
+
+.hero-date {
+    display: inline-block;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+    background-color: #ff0000;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #cc0000;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.footer {
+    background-color: #f8f9fa;
+    border-top: 2px solid #ff0000;
+}
+
+.footer a {
+    padding-left: 2px;
+    padding-right: 2px;
+    text-decoration: none;
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ffffff;
+    background-color: #ff0000;
+    border-radius: 3px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
