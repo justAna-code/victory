@@ -208,3 +208,11 @@ html {
 section {
     scroll-margin-top: 80px;
 }
+.card-img-top {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    filter: grayscale(0%);
+}
